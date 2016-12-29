@@ -10,9 +10,16 @@
 #import "UIImage+OpenCV.h"
 #import "stitching.h"
 #import "UIImage+Rotate.h"
+#import "Akaze.h"
+
 
 
 @implementation CVWrapper
+
++(UIImage *)recognizePoints:(UIImage *)image{
+    Akaze *akaze = [[Akaze alloc] init];
+    return [akaze recognizePoints:image];
+}
 
 + (UIImage*) processImageWithOpenCV: (UIImage*) inputImage
 {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833A25351E15B6E10082046D /* Akaze.mm in Sources */ = {isa = PBXBuildFile; fileRef = 833A25341E15B6E10082046D /* Akaze.mm */; };
+		A036506B7C6CBD942FE99E59 /* Pods_SwiftStitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22A8FBA5D0937F5FC9F345 /* Pods_SwiftStitch.framework */; };
 		AB7D8E7A193E928E0059EE63 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB7D8E79193E928E0059EE63 /* UIImage+OpenCV.mm */; };
 		AB7D8E7D193E92B80059EE63 /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB7D8E7C193E92B80059EE63 /* CVWrapper.mm */; };
 		AB7D8E80193E92C30059EE63 /* stitching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB7D8E7E193E92C30059EE63 /* stitching.cpp */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B22A8FBA5D0937F5FC9F345 /* Pods_SwiftStitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		833A25331E15B6E10082046D /* Akaze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Akaze.h; sourceTree = "<group>"; };
+		833A25341E15B6E10082046D /* Akaze.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Akaze.mm; sourceTree = "<group>"; };
 		AB6D1AEE193F9B6600F8B0F5 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		AB7D8E77193E928D0059EE63 /* SwiftStitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB7D8E78193E928E0059EE63 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
@@ -35,6 +40,8 @@
 		AB896A8E193E8E830018B9EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ABAA668B1BD420BE00BD6A45 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
 		ABAA668C1BD420BE00BD6A45 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		DBFFF1FDC178E9E75AEE0DD3 /* Pods-SwiftStitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch.release.xcconfig"; sourceTree = "<group>"; };
+		E7F3EFFF15AAB700A2118675 /* Pods-SwiftStitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,12 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A036506B7C6CBD942FE99E59 /* Pods_SwiftStitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5408E43DAC699B1F0C0CE994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7F3EFFF15AAB700A2118675 /* Pods-SwiftStitch.debug.xcconfig */,
+				DBFFF1FDC178E9E75AEE0DD3 /* Pods-SwiftStitch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB896A79193E8E830018B9EC = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +72,7 @@
 				AB896A84193E8E830018B9EC /* SwiftStitch */,
 				AB896A83193E8E830018B9EC /* Products */,
 				EE5F212F31B24F2C835C369D /* Frameworks */,
+				5408E43DAC699B1F0C0CE994 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +87,8 @@
 		AB896A84193E8E830018B9EC /* SwiftStitch */ = {
 			isa = PBXGroup;
 			children = (
+				833A25331E15B6E10082046D /* Akaze.h */,
+				833A25341E15B6E10082046D /* Akaze.mm */,
 				ABAA668B1BD420BE00BD6A45 /* UIImage+Rotate.h */,
 				ABAA668C1BD420BE00BD6A45 /* UIImage+Rotate.m */,
 				AB7D8E78193E928E0059EE63 /* UIImage+OpenCV.h */,
@@ -99,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				AB7D8E83193F33B40059EE63 /* libz.dylib */,
+				1B22A8FBA5D0937F5FC9F345 /* Pods_SwiftStitch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB896A9E193E8E830018B9EC /* Build configuration list for PBXNativeTarget "SwiftStitch" */;
 			buildPhases = (
+				9C5FF757743655CF52F5DDD4 /* [CP] Check Pods Manifest.lock */,
 				AB896A7E193E8E830018B9EC /* Sources */,
 				AB896A7F193E8E830018B9EC /* Frameworks */,
 				AB896A80193E8E830018B9EC /* Resources */,
+				CDE7AFC602CBEBCB3977562D /* [CP] Embed Pods Frameworks */,
+				5C574732E47F4FE78C50E877 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +160,7 @@
 				TargetAttributes = {
 					AB896A81193E8E830018B9EC = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = WMDZ2CQA8K;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -170,12 +195,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C574732E47F4FE78C50E877 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5FF757743655CF52F5DDD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE7AFC602CBEBCB3977562D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftStitch/Pods-SwiftStitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB896A7E193E8E830018B9EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AB896A8A193E8E830018B9EC /* SwViewController.swift in Sources */,
+				833A25351E15B6E10082046D /* Akaze.mm in Sources */,
 				AB7D8E80193E92C30059EE63 /* stitching.cpp in Sources */,
 				ABAA668D1BD420BE00BD6A45 /* UIImage+Rotate.m in Sources */,
 				AB7D8E7A193E928E0059EE63 /* UIImage+OpenCV.mm in Sources */,
@@ -287,15 +361,17 @@
 		};
 		AB896A9F193E8E830018B9EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F3EFFF15AAB700A2118675 /* Pods-SwiftStitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = WMDZ2CQA8K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftStitch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ellipsis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellipsis.SwiftStitch2321;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStitch/SwiftStitch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -305,15 +381,17 @@
 		};
 		AB896AA0193E8E830018B9EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFFF1FDC178E9E75AEE0DD3 /* Pods-SwiftStitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = WMDZ2CQA8K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftStitch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ellipsis.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ellipsis.SwiftStitch2321;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStitch/SwiftStitch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
