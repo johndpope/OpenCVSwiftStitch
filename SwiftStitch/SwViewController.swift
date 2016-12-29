@@ -44,20 +44,21 @@ class SwViewController: UIViewController, UIScrollViewDelegate {
         self.spinner.startAnimating()
         DispatchQueue.global().async {
             
-            var image1 = UIImage(named:"pano_19_16_mid.jpg")
-            var image2 = UIImage(named:"pano_19_20_mid.jpg")
-            var image3 = UIImage(named:"pano_19_22_mid.jpg")
-            var image4 = UIImage(named:"pano_19_25_mid.jpg")
+            let image1 = UIImage(named:"pano_19_16_mid.jpg")
+            let image2 = UIImage(named:"pano_19_20_mid.jpg")
+            let image3 = UIImage(named:"pano_19_22_mid.jpg")
+            let image4 = UIImage(named:"pano_19_25_mid.jpg")
             
-            // optional
-            image1 = CVWrapper.recognizePoints(image1!)
+            // Bug - breaks stitching algorithm.
+            /*image1 = CVWrapper.recognizePoints(image1!)
             image2 = CVWrapper.recognizePoints(image2!)
             image3 = CVWrapper.recognizePoints(image3!)
-            image4 = CVWrapper.recognizePoints(image4!)
+            image4 = CVWrapper.recognizePoints(image4!)*/
             
             let imageArray:[UIImage?] = [image1,image2,image3,image4]
             
-            let stitchedImage:UIImage = CVWrapper.process(with: imageArray as! [UIImage]) as UIImage
+            var stitchedImage:UIImage = CVWrapper.process(with: imageArray as! [UIImage]) as UIImage
+            stitchedImage = CVWrapper.recognizePoints(stitchedImage)
             
             DispatchQueue.main.async {
                 NSLog("stichedImage %@", stitchedImage)
